@@ -10,6 +10,7 @@
 
 @interface ProdGrpCollectionViewController : UIViewController
 
+@property (strong, nonatomic) NSMutableArray *prodGrps;
 
 
 @end

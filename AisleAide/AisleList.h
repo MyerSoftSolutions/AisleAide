@@ -18,5 +18,6 @@
 
 -(NSMutableArray*)oneAisleOver:(Aisle*)aisle;
 
+-(NSMutableArray*)getAllProdGrps;
 -(Item*)outputItem:(int)aisleNum;
 @end

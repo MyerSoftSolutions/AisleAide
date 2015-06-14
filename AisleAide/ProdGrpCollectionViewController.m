@@ -9,11 +9,14 @@
 #import "ProdGrpCollectionViewController.h"
 #import "ProdGrpCollectionViewCell.h"
 #import "Store.h"
+#import "ProductGroup.h"
+#import "AisleList.h"
 
 @interface ProdGrpCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (strong, nonatomic) NSMutableArray *prodGrps;
+//@property (strong, nonatomic) NSMutableArray *prodGrps;
+@property (strong, nonatomic) AisleList *aisleList;
 
 @end
 
@@ -28,6 +31,12 @@
     
     store.name = @"Kroger";
     [store createAisleList:@"StoreModel"];
+    
+    self.aisleList = store.aisleList;
+   
+    self.prodGrps = [store.aisleList getAllProdGrps];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,6 +58,14 @@
     if (cell == nil) {
         cell = [[ProdGrpCollectionViewCell alloc] init];
     }
+    
+    ProductGroup *prodGp = (ProductGroup*)[self.prodGrps objectAtIndex:indexPath.row];
+    
+    cell.nameLabel.text = prodGp.name;
+    
+    
+    
+    
     
     return cell;
     
