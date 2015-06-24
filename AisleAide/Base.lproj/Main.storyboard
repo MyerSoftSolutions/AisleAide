@@ -60,8 +60,7 @@
                                                             <exclude reference="38u-09-GAJ"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="248" y="18" width="51" height="61.5"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="38u-09-GAJ"/>
                                                         </mask>
@@ -249,7 +248,7 @@
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-I7-o2Y">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
                                                         <rect key="frame" x="20" y="96" width="128" height="104"/>
                                                     </variation>
                                                 </imageView>
@@ -258,7 +257,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="85" id="b4U-CA-qeI"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="22"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
@@ -266,8 +265,7 @@
                                                             <exclude reference="b4U-CA-qeI"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="20" y="8" width="128" height="85"/>
+                                                    <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="b4U-CA-qeI"/>
                                                         </mask>
@@ -276,13 +274,15 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="0.50190767550000004" green="1" blue="0.73156129069999998" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.49955013149999999" green="1" blue="0.18832488119999999" alpha="0.57000000000000006" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="3Cz-pa-NuT" firstAttribute="leading" secondItem="j99-GK-Rul" secondAttribute="leadingMargin" constant="12" id="1PX-xr-p6H"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Cz-pa-NuT" secondAttribute="trailing" id="BgC-Dn-k15"/>
                                             <constraint firstItem="1Mp-I7-o2Y" firstAttribute="bottom" secondItem="j99-GK-Rul" secondAttribute="bottomMargin" id="EA7-CR-y9a"/>
                                             <constraint firstItem="3Cz-pa-NuT" firstAttribute="centerX" secondItem="j99-GK-Rul" secondAttribute="centerX" id="Jrq-1o-7fb"/>
                                             <constraint firstItem="3Cz-pa-NuT" firstAttribute="top" secondItem="j99-GK-Rul" secondAttribute="topMargin" id="KkN-Av-YgE"/>
                                             <constraint firstItem="1Mp-I7-o2Y" firstAttribute="top" secondItem="3Cz-pa-NuT" secondAttribute="bottom" constant="3" id="QJG-pV-V8O"/>
+                                            <constraint firstItem="3Cz-pa-NuT" firstAttribute="leading" secondItem="j99-GK-Rul" secondAttribute="leading" id="les-0X-ZW5"/>
                                             <constraint firstItem="3Cz-pa-NuT" firstAttribute="leading" secondItem="1Mp-I7-o2Y" secondAttribute="leading" id="wu2-mZ-odC"/>
                                             <constraint firstItem="1Mp-I7-o2Y" firstAttribute="trailing" secondItem="3Cz-pa-NuT" secondAttribute="trailing" id="yex-fd-eg9"/>
                                         </constraints>
@@ -293,13 +293,15 @@
                                                 <exclude reference="3Cz-pa-NuT"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <exclude reference="wu2-mZ-odC"/>
-                                                <exclude reference="KkN-Av-YgE"/>
                                                 <exclude reference="1PX-xr-p6H"/>
+                                                <exclude reference="BgC-Dn-k15"/>
                                                 <exclude reference="Jrq-1o-7fb"/>
+                                                <exclude reference="KkN-Av-YgE"/>
+                                                <exclude reference="les-0X-ZW5"/>
+                                                <exclude reference="wu2-mZ-odC"/>
                                                 <exclude reference="EA7-CR-y9a"/>
-                                                <exclude reference="yex-fd-eg9"/>
                                                 <exclude reference="QJG-pV-V8O"/>
+                                                <exclude reference="yex-fd-eg9"/>
                                             </mask>
                                         </variation>
                                         <variation key="widthClass=compact">
@@ -308,13 +310,15 @@
                                                 <include reference="3Cz-pa-NuT"/>
                                             </mask>
                                             <mask key="constraints">
-                                                <include reference="wu2-mZ-odC"/>
-                                                <include reference="KkN-Av-YgE"/>
                                                 <exclude reference="1PX-xr-p6H"/>
+                                                <include reference="BgC-Dn-k15"/>
                                                 <include reference="Jrq-1o-7fb"/>
+                                                <include reference="KkN-Av-YgE"/>
+                                                <include reference="les-0X-ZW5"/>
+                                                <exclude reference="wu2-mZ-odC"/>
                                                 <include reference="EA7-CR-y9a"/>
-                                                <include reference="yex-fd-eg9"/>
                                                 <include reference="QJG-pV-V8O"/>
+                                                <exclude reference="yex-fd-eg9"/>
                                             </mask>
                                         </variation>
                                         <connections>

@@ -30,6 +30,11 @@
             [arr addObject:prdGrp];
         }
     }
+    
+    //Sort arr alphabetically
+    NSSortDescriptor *descriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    [arr sortUsingDescriptors:[NSArray arrayWithObject:descriptor]];
+    
     return arr;
     
 }
