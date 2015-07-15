@@ -27,11 +27,15 @@ BOOL rowPressed;
     store.name = @"Kroger";
     [store createAisleList:@"StoreModel"];
     
-    [self.itemArray addObject:[store.aisleList outputItem:1]];
-    [self.itemArray addObject:[store.aisleList outputItem:2]];
-    [self.itemArray addObject:[store.aisleList outputItem:3]];
     [self.itemArray addObject:[store.aisleList outputItem:5]];
     [self.itemArray addObject:[store.aisleList outputItem:6]];
+    [self.itemArray addObject:[store.aisleList outputItem:1]];
+    [self.itemArray addObject:[store.aisleList outputItem:3]];
+    [self.itemArray addObject:[store.aisleList outputItem:2]];
+    
+    NSSortDescriptor *sortAisle = [[NSSortDescriptor alloc] initWithKey:@"aisleNum" ascending:YES];
+    [self.itemArray sortUsingDescriptors:[NSArray arrayWithObject:sortAisle]];
+
     
     NSLog(@"Item Array contents: %@", self.itemArray);
     self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.itemArray.count];
@@ -43,6 +47,9 @@ BOOL rowPressed;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)sortItemArray:(NSMutableArray*)list{
+    }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;

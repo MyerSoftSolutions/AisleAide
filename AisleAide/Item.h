@@ -17,5 +17,6 @@
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) ProductGroup *productGroup;
 @property (strong, nonatomic) Aisle *aisle;
+@property (strong, nonatomic) NSNumber *aisleNum;
 
 @end

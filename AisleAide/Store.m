@@ -52,6 +52,8 @@
             NSArray *pgItems = [diction objectForKey:@"Items"];
             for (NSDictionary *dict in pgItems) {
                 Item *item = [[Item alloc] initWithName:[dict objectForKey:@"name"] prodGroup:pG aisle:aisle];
+                item.aisleNum = [NSNumber numberWithInt:i];
+                
                 [pG.items addObject:item];
             }
             

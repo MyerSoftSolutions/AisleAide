@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="69W-vx-BEc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Td9-SR-VRa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -60,7 +60,8 @@
                                                             <exclude reference="38u-09-GAJ"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="widthClass=compact">
+                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="248" y="18" width="51" height="61.5"/>
                                                         <mask key="constraints">
                                                             <include reference="38u-09-GAJ"/>
                                                         </mask>
@@ -376,11 +377,11 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <exclude reference="MST-p8-fS4"/>
-                                                <exclude reference="ypK-Mn-qat"/>
                                                 <exclude reference="gRd-FG-SXX"/>
                                                 <exclude reference="nvP-rG-xqh"/>
-                                                <exclude reference="fNP-lg-9p3"/>
+                                                <exclude reference="ypK-Mn-qat"/>
                                                 <exclude reference="Y1T-11-589"/>
+                                                <exclude reference="fNP-lg-9p3"/>
                                                 <exclude reference="z4d-4h-4r5"/>
                                             </mask>
                                         </variation>
@@ -391,11 +392,11 @@
                                             </mask>
                                             <mask key="constraints">
                                                 <include reference="MST-p8-fS4"/>
-                                                <include reference="ypK-Mn-qat"/>
                                                 <include reference="gRd-FG-SXX"/>
                                                 <include reference="nvP-rG-xqh"/>
-                                                <include reference="fNP-lg-9p3"/>
+                                                <include reference="ypK-Mn-qat"/>
                                                 <include reference="Y1T-11-589"/>
+                                                <include reference="fNP-lg-9p3"/>
                                                 <include reference="z4d-4h-4r5"/>
                                             </mask>
                                         </variation>
