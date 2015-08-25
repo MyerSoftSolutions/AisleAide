@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		401B19FA1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401B19F91B70435D00E64243 /* AisleAideSetupViewController.m */; };
+		401B19FB1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 401B19F91B70435D00E64243 /* AisleAideSetupViewController.m */; };
+		402F6CBE1B8C11970078DD63 /* AddMoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F6CBD1B8C11970078DD63 /* AddMoreItemsViewController.m */; };
+		402F6CBF1B8C11970078DD63 /* AddMoreItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 402F6CBD1B8C11970078DD63 /* AddMoreItemsViewController.m */; };
 		403AF3011AA7A8D600F8848E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 403AF3001AA7A8D600F8848E /* main.m */; };
 		403AF3041AA7A8D600F8848E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 403AF3031AA7A8D600F8848E /* AppDelegate.m */; };
 		403AF3071AA7A8D600F8848E /* AisleAide.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 403AF3051AA7A8D600F8848E /* AisleAide.xcdatamodeld */; };
@@ -17,6 +21,14 @@
 		403AF31E1AA7A8D600F8848E /* AisleAideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 403AF31D1AA7A8D600F8848E /* AisleAideTests.m */; };
 		403AF3291AA7AB2200F8848E /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 403AF3281AA7AB2200F8848E /* Item.m */; };
 		403AF32A1AA7AB2200F8848E /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 403AF3281AA7AB2200F8848E /* Item.m */; };
+		404D96401B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D963F1B6F01EE00447F5C /* ItemCollectionViewController.m */; };
+		404D96411B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D963F1B6F01EE00447F5C /* ItemCollectionViewController.m */; };
+		404D96441B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */; };
+		404D96451B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */; };
+		404D96491B703F0A00447F5C /* AANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D96471B703F0A00447F5C /* AANavigationController.m */; };
+		404D964A1B703F0A00447F5C /* AANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D96471B703F0A00447F5C /* AANavigationController.m */; };
+		404D964B1B703F0A00447F5C /* AANavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404D96481B703F0A00447F5C /* AANavigationController.xib */; };
+		404D964C1B703F0A00447F5C /* AANavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404D96481B703F0A00447F5C /* AANavigationController.xib */; };
 		40A6B1AE1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */; };
 		40A6B1AF1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */; };
 		40A6B1B21B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1B11B17EA090059BB24 /* ProdGrpCollectionViewController.m */; };
@@ -52,6 +64,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		401B19F81B70435D00E64243 /* AisleAideSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AisleAideSetupViewController.h; sourceTree = SOURCE_ROOT; };
+		401B19F91B70435D00E64243 /* AisleAideSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AisleAideSetupViewController.m; sourceTree = SOURCE_ROOT; };
+		402F6CBC1B8C11970078DD63 /* AddMoreItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMoreItemsViewController.h; sourceTree = "<group>"; };
+		402F6CBD1B8C11970078DD63 /* AddMoreItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMoreItemsViewController.m; sourceTree = "<group>"; };
 		403AF2FB1AA7A8D600F8848E /* AisleAide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AisleAide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		403AF2FF1AA7A8D600F8848E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		403AF3001AA7A8D600F8848E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +84,13 @@
 		403AF31D1AA7A8D600F8848E /* AisleAideTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AisleAideTests.m; sourceTree = "<group>"; };
 		403AF3271AA7AB2200F8848E /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		403AF3281AA7AB2200F8848E /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		404D963E1B6F01EE00447F5C /* ItemCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewController.h; sourceTree = "<group>"; };
+		404D963F1B6F01EE00447F5C /* ItemCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewController.m; sourceTree = "<group>"; };
+		404D96421B6F05BC00447F5C /* ItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCollectionViewCell.h; sourceTree = "<group>"; };
+		404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCollectionViewCell.m; sourceTree = "<group>"; };
+		404D96461B703F0A00447F5C /* AANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AANavigationController.h; sourceTree = "<group>"; };
+		404D96471B703F0A00447F5C /* AANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AANavigationController.m; sourceTree = "<group>"; };
+		404D96481B703F0A00447F5C /* AANavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AANavigationController.xib; sourceTree = "<group>"; };
 		40A6B1AC1B17E9660059BB24 /* ProdGrpCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdGrpCollectionViewCell.h; sourceTree = "<group>"; };
 		40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdGrpCollectionViewCell.m; sourceTree = "<group>"; };
 		40A6B1B01B17EA090059BB24 /* ProdGrpCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdGrpCollectionViewController.h; sourceTree = "<group>"; };
@@ -153,11 +176,22 @@
 				403AF3031AA7A8D600F8848E /* AppDelegate.m */,
 				403AF3081AA7A8D600F8848E /* ViewController.h */,
 				403AF3091AA7A8D600F8848E /* ViewController.m */,
+				401B19F81B70435D00E64243 /* AisleAideSetupViewController.h */,
+				401B19F91B70435D00E64243 /* AisleAideSetupViewController.m */,
 				403AF30B1AA7A8D600F8848E /* Main.storyboard */,
+				402F6CBC1B8C11970078DD63 /* AddMoreItemsViewController.h */,
+				402F6CBD1B8C11970078DD63 /* AddMoreItemsViewController.m */,
 				40A6B1B41B17F9010059BB24 /* AisleAideContainerViewController.h */,
 				40A6B1B51B17F9010059BB24 /* AisleAideContainerViewController.m */,
 				40A6B1B01B17EA090059BB24 /* ProdGrpCollectionViewController.h */,
 				40A6B1B11B17EA090059BB24 /* ProdGrpCollectionViewController.m */,
+				404D963E1B6F01EE00447F5C /* ItemCollectionViewController.h */,
+				404D963F1B6F01EE00447F5C /* ItemCollectionViewController.m */,
+				404D96461B703F0A00447F5C /* AANavigationController.h */,
+				404D96471B703F0A00447F5C /* AANavigationController.m */,
+				404D96481B703F0A00447F5C /* AANavigationController.xib */,
+				404D96421B6F05BC00447F5C /* ItemCollectionViewCell.h */,
+				404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */,
 				40A6B1AC1B17E9660059BB24 /* ProdGrpCollectionViewCell.h */,
 				40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */,
 				40D86F301AFFD5EE00D686C8 /* ItemListViewController.h */,
@@ -281,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				403AF30D1AA7A8D600F8848E /* Main.storyboard in Resources */,
+				404D964B1B703F0A00447F5C /* AANavigationController.xib in Resources */,
 				403AF3121AA7A8D600F8848E /* LaunchScreen.xib in Resources */,
 				40F198441AC328CE00950FDE /* StoreModel.plist in Resources */,
 				403AF30F1AA7A8D600F8848E /* Images.xcassets in Resources */,
@@ -292,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40F198451AC328CE00950FDE /* StoreModel.plist in Resources */,
+				404D964C1B703F0A00447F5C /* AANavigationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,15 +341,20 @@
 				40D86F361AFFE45000D686C8 /* ItemTableViewCell.m in Sources */,
 				40F24CDA1ABCF0C400B9945F /* Aisle.m in Sources */,
 				403AF3291AA7AB2200F8848E /* Item.m in Sources */,
+				404D96491B703F0A00447F5C /* AANavigationController.m in Sources */,
+				404D96401B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */,
 				40A6B1AE1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */,
 				40F24CDE1ABCF5B900B9945F /* Patron.m in Sources */,
 				40A6B1B21B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */,
 				403AF3041AA7A8D600F8848E /* AppDelegate.m in Sources */,
+				401B19FA1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */,
 				403AF3011AA7A8D600F8848E /* main.m in Sources */,
 				403AF30A1AA7A8D600F8848E /* ViewController.m in Sources */,
 				40F198391AC319D900950FDE /* Store.m in Sources */,
 				40D86F321AFFD5EE00D686C8 /* ItemListViewController.m in Sources */,
 				403AF3071AA7A8D600F8848E /* AisleAide.xcdatamodeld in Sources */,
+				404D96441B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */,
+				402F6CBE1B8C11970078DD63 /* AddMoreItemsViewController.m in Sources */,
 				40A6B1B61B17F9010059BB24 /* AisleAideContainerViewController.m in Sources */,
 				40F1983D1AC31C3400950FDE /* AisleList.m in Sources */,
 				40F198351AC314E100950FDE /* ProductGroup.m in Sources */,
@@ -325,15 +366,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				40A6B1B71B17F9010059BB24 /* AisleAideContainerViewController.m in Sources */,
+				402F6CBF1B8C11970078DD63 /* AddMoreItemsViewController.m in Sources */,
 				40D86F371AFFE45000D686C8 /* ItemTableViewCell.m in Sources */,
 				40F24CDB1ABCF0C400B9945F /* Aisle.m in Sources */,
 				403AF32A1AA7AB2200F8848E /* Item.m in Sources */,
 				40F198361AC314E100950FDE /* ProductGroup.m in Sources */,
+				404D96411B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */,
 				40F1983A1AC319D900950FDE /* Store.m in Sources */,
 				40A6B1B31B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */,
 				403AF31E1AA7A8D600F8848E /* AisleAideTests.m in Sources */,
 				40D86F331AFFD5EE00D686C8 /* ItemListViewController.m in Sources */,
+				401B19FB1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */,
 				40A6B1AF1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */,
+				404D96451B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */,
+				404D964A1B703F0A00447F5C /* AANavigationController.m in Sources */,
 				40F24CDF1ABCF5B900B9945F /* Patron.m in Sources */,
 				40F1983E1AC31C3400950FDE /* AisleList.m in Sources */,
 			);

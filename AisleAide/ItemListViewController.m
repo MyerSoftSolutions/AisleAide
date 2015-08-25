@@ -22,6 +22,7 @@ BOOL rowPressed;
     [super viewDidLoad];
     
     self.itemArray = [[NSMutableArray alloc] init];
+    
     Store *store = [Store sharedStore];
     
     store.name = @"Kroger";
@@ -33,9 +34,9 @@ BOOL rowPressed;
     [self.itemArray addObject:[store.aisleList outputItem:3]];
     [self.itemArray addObject:[store.aisleList outputItem:2]];
     
+    
     NSSortDescriptor *sortAisle = [[NSSortDescriptor alloc] initWithKey:@"aisleNum" ascending:YES];
     [self.itemArray sortUsingDescriptors:[NSArray arrayWithObject:sortAisle]];
-
     
     NSLog(@"Item Array contents: %@", self.itemArray);
     self.itemCountLabel.text = [NSString stringWithFormat:@"%lu",(unsigned long)self.itemArray.count];

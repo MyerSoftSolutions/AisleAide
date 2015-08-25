@@ -11,6 +11,8 @@
 #import "Store.h"
 #import "ProductGroup.h"
 #import "AisleList.h"
+#import "ItemCollectionViewController.h"
+#import "ItemCollectionViewCell.h"
 
 @interface ProdGrpCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 
@@ -35,6 +37,9 @@
     self.aisleList = store.aisleList;
    
     self.prodGrps = [store.aisleList getAllProdGrps];
+    
+    [self.collectionView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
     
     
 }
@@ -63,22 +68,29 @@
     
     cell.nameLabel.text = prodGp.name;
     
-    
-    
-    
-    
     return cell;
     
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    [super prepareForSegue:segue sender:sender];
+
+    ItemCollectionViewCell *cell = (ItemCollectionViewCell*)sender;
+    NSIndexPath *indexPath = [self.collectionView indexPathForCell:cell];
+    
+    ProductGroup *pGrp = [self.prodGrps objectAtIndex:indexPath.row];
+
+    if ([segue.identifier isEqualToString:@"SelectItemSegue"]) {
+        ItemCollectionViewController *vc = segue.destinationViewController;
+        vc.itemArray = [NSMutableArray new];
+        vc.itemArray = [pGrp.items copy];
+        
+    }
+
 }
-*/
+
 
 @end
