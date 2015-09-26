@@ -9,14 +9,14 @@
 #import "AisleAideSetupViewController.h"
 
 @protocol AddMoreItemsDelegate <NSObject>
-
+@required
 -(void)selectionMade:(int)choice;
 
 @end
 
 @interface AddMoreItemsViewController : AisleAideSetupViewController
 
-@property (weak, nonatomic) id <AddMoreItemsDelegate> delegate;
+@property (weak, nonatomic) id <AddMoreItemsDelegate> addItemsDelegate;
 
 - (IBAction)noPressed:(id)sender;
 - (IBAction)yesPressed:(id)sender;

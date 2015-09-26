@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AddMoreItemsViewController.h"
+#import "AisleAideSetupViewController.h"
 
-@interface ItemCollectionViewController : UIViewController <AddMoreItemsDelegate>
+@interface ItemCollectionViewController : AisleAideSetupViewController
 
 @property (strong, nonatomic) NSMutableArray *itemArray;
 

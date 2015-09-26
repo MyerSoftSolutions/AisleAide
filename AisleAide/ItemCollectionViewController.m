@@ -10,10 +10,11 @@
 #import "ItemCollectionViewCell.h"
 #import "Item.h"
 #import "ItemListViewController.h"
+#import "AddMoreItemsViewController.h"
 #import "ProdGrpCollectionViewController.h"
 
 
-@interface ItemCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ItemCollectionViewController ()<UICollectionViewDataSource, UICollectionViewDelegate, AddMoreItemsDelegate>
 
 @property (strong, nonatomic) IBOutlet UICollectionView *collectionView;
 
@@ -59,6 +60,12 @@
     return cell;
     
 }
+
+-(void)collectionView:(nonnull UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
+
+    
+    
+}
 #pragma mark - AddMoreItemsDelegate Method
 
 -(void)selectionMade:(int)choice{
@@ -84,15 +91,18 @@
     
         AddMoreItemsViewController *addVC = (AddMoreItemsViewController*) segue.destinationViewController;
         
-        addVC.delegate = self;
+        addVC.addItemsDelegate = self;
+        addVC.lyle = self.lyle;
         
     }else if([segue.identifier isEqualToString:@"ShowListSegue"]){
     
-//        ItemListViewController *listVC = (ItemListViewController*)segue.destinationViewController;
-    
+        ItemListViewController *listVC = (ItemListViewController*)segue.destinationViewController;
+        listVC.lyle = self.lyle;
+        
     }else if([segue.identifier isEqualToString:@"MoreItemsSegue"]){
     
-//        ProdGrpCollectionViewController *prdGrpVC = (ProdGrpCollectionViewController*)segue.destinationViewController;
+        ProdGrpCollectionViewController *prdGrpVC = (ProdGrpCollectionViewController*)segue.destinationViewController;
+        prdGrpVC.lyle = self.lyle;
     }
         
 }

@@ -37,20 +37,24 @@
 - (IBAction)noPressed:(id)sender {
     
 //    [self.delegate selectionMade:0];
-//    [self dismissViewControllerAnimated:YES completion:nil];
     
-    [self dismissViewControllerAnimated:YES completion:^void (void){
-    [self.delegate selectionMade:0];
-    }];
+    [self.addItemsDelegate selectionMade:0];
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+
+//    [self dismissViewControllerAnimated:YES completion:^void (void){
+//    }];
 
 }
 
 - (IBAction)yesPressed:(id)sender {
 //    [self.delegate selectionMade:1];
     
-    [self dismissViewControllerAnimated:YES completion:^void (void){
-        [self.delegate selectionMade:1];
-    }];
+    [self.addItemsDelegate selectionMade:1];
+    [self dismissViewControllerAnimated:YES completion:nil];
+//    [self dismissViewControllerAnimated:YES completion:^void (void){
+//        [self.addItemsDelegate selectionMade:1];
+//    }];
 
 }
 @end

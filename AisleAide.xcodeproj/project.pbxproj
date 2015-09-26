@@ -39,6 +39,10 @@
 		40D86F331AFFD5EE00D686C8 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F311AFFD5EE00D686C8 /* ItemListViewController.m */; };
 		40D86F361AFFE45000D686C8 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */; };
 		40D86F371AFFE45000D686C8 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */; };
+		40E94BA71BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; settings = {ASSET_TAGS = (); }; };
+		40E94BA81BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; settings = {ASSET_TAGS = (); }; };
+		40E94BAB1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; settings = {ASSET_TAGS = (); }; };
+		40E94BAC1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; settings = {ASSET_TAGS = (); }; };
 		40F198351AC314E100950FDE /* ProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198341AC314E100950FDE /* ProductGroup.m */; };
 		40F198361AC314E100950FDE /* ProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198341AC314E100950FDE /* ProductGroup.m */; };
 		40F198391AC319D900950FDE /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198381AC319D900950FDE /* Store.m */; };
@@ -101,6 +105,10 @@
 		40D86F311AFFD5EE00D686C8 /* ItemListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemListViewController.m; sourceTree = "<group>"; };
 		40D86F341AFFE45000D686C8 /* ItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemTableViewCell.h; sourceTree = "<group>"; };
 		40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemTableViewCell.m; sourceTree = "<group>"; };
+		40E94BA51BB708C9003E6920 /* Lyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lyle.h; sourceTree = "<group>"; };
+		40E94BA61BB708C9003E6920 /* Lyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lyle.m; sourceTree = "<group>"; };
+		40E94BA91BB70FD9003E6920 /* ItemList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemList.h; sourceTree = "<group>"; };
+		40E94BAA1BB70FD9003E6920 /* ItemList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemList.m; sourceTree = "<group>"; };
 		40F198331AC314E100950FDE /* ProductGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductGroup.h; sourceTree = "<group>"; };
 		40F198341AC314E100950FDE /* ProductGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductGroup.m; sourceTree = "<group>"; };
 		40F198371AC319D900950FDE /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
@@ -154,6 +162,8 @@
 		403AF2F21AA7A8D600F8848E = {
 			isa = PBXGroup;
 			children = (
+				40E94BA51BB708C9003E6920 /* Lyle.h */,
+				40E94BA61BB708C9003E6920 /* Lyle.m */,
 				403AF2FD1AA7A8D600F8848E /* AisleAide */,
 				403AF31A1AA7A8D600F8848E /* AisleAideTests */,
 				403AF2FC1AA7A8D600F8848E /* Products */,
@@ -196,6 +206,8 @@
 				40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */,
 				40D86F301AFFD5EE00D686C8 /* ItemListViewController.h */,
 				40D86F311AFFD5EE00D686C8 /* ItemListViewController.m */,
+				40E94BA91BB70FD9003E6920 /* ItemList.h */,
+				40E94BAA1BB70FD9003E6920 /* ItemList.m */,
 				40D86F341AFFE45000D686C8 /* ItemTableViewCell.h */,
 				40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */,
 				4017124C1AEEC36A000EC343 /* AisleAide System Objects */,
@@ -338,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40E94BAB1BB70FD9003E6920 /* ItemList.m in Sources */,
 				40D86F361AFFE45000D686C8 /* ItemTableViewCell.m in Sources */,
 				40F24CDA1ABCF0C400B9945F /* Aisle.m in Sources */,
 				403AF3291AA7AB2200F8848E /* Item.m in Sources */,
@@ -345,6 +358,7 @@
 				404D96401B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */,
 				40A6B1AE1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */,
 				40F24CDE1ABCF5B900B9945F /* Patron.m in Sources */,
+				40E94BA71BB708C9003E6920 /* Lyle.m in Sources */,
 				40A6B1B21B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */,
 				403AF3041AA7A8D600F8848E /* AppDelegate.m in Sources */,
 				401B19FA1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */,
@@ -372,10 +386,12 @@
 				403AF32A1AA7AB2200F8848E /* Item.m in Sources */,
 				40F198361AC314E100950FDE /* ProductGroup.m in Sources */,
 				404D96411B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */,
+				40E94BA81BB708C9003E6920 /* Lyle.m in Sources */,
 				40F1983A1AC319D900950FDE /* Store.m in Sources */,
 				40A6B1B31B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */,
 				403AF31E1AA7A8D600F8848E /* AisleAideTests.m in Sources */,
 				40D86F331AFFD5EE00D686C8 /* ItemListViewController.m in Sources */,
+				40E94BAC1BB70FD9003E6920 /* ItemList.m in Sources */,
 				401B19FB1B70435D00E64243 /* AisleAideSetupViewController.m in Sources */,
 				40A6B1AF1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */,
 				404D96451B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */,

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AisleAideSetupViewController.h"
 
-@interface ProdGrpCollectionViewController : UIViewController
+@interface ProdGrpCollectionViewController : AisleAideSetupViewController
 
 @property (strong, nonatomic) NSMutableArray *prodGrps;
 

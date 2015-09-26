@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AisleList.h"
+#import "AisleAideSetupViewController.h"
 
-@interface ItemListViewController : UIViewController
+@interface ItemListViewController : AisleAideSetupViewController
 
 @property (nonatomic, strong) AisleList *aisleList;
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class Lyle;
 @interface AisleAideSetupViewController : UIViewController
 
+@property (nonatomic, strong) Lyle *lyle;
 @end

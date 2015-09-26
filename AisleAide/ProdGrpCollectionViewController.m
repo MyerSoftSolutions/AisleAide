@@ -87,6 +87,7 @@
         ItemCollectionViewController *vc = segue.destinationViewController;
         vc.itemArray = [NSMutableArray new];
         vc.itemArray = [pGrp.items copy];
+        vc.lyle = self.lyle;
         
     }
 
