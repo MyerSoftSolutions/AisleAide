@@ -26,22 +26,45 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    if (!self.lyle) {
+        [self initialSetUp];
+    } else{
+        self.prodGrps = [self.lyle.currentStore.aisleList getAllProdGrps];
+    }
+    
 
-    self.prodGrps = [[NSMutableArray alloc] init];
-    
-    Store *store = [Store sharedStore];
-    
-    store.name = @"Kroger";
-    [store createAisleList:@"StoreModel"];
-    
-    self.aisleList = store.aisleList;
-   
-    self.prodGrps = [store.aisleList getAllProdGrps];
+//    self.prodGrps = [[NSMutableArray alloc] init];
+//    
+//    Store *store = [Store sharedStore];
+//    
+//    store.name = @"Kroger";
+//    [store createAisleList:@"StoreModel"];
+//    
+//    self.aisleList = store.aisleList;
+//   
+//    self.prodGrps = [store.aisleList getAllProdGrps];
     
     [self.collectionView setContentInset:UIEdgeInsetsMake(0, 0, 0, 0)];
     [self setAutomaticallyAdjustsScrollViewInsets:NO];
+
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     
+    self.navigationItem.backBarButtonItem = nil;
+}
+
+
+-(void)initialSetUp{
+    self.lyle = [Lyle defaultHelper];
+    [self.lyle setCurrentStore:[Store sharedStore]];
     
+    [self.lyle.currentStore createAisleList:@"StoreModel"];
+    
+//    self.aisleList = self.lyle.currentStore.aisleList;
+    self.prodGrps = [self.lyle.currentStore.aisleList getAllProdGrps];
 }
 
 - (void)didReceiveMemoryWarning {

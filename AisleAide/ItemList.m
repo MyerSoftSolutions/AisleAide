@@ -10,4 +10,22 @@
 
 @implementation ItemList
 
+-(instancetype)init{
+
+    self = [super init];
+    if (self) {
+        self.itemArray = [[NSMutableArray alloc] init];
+    }
+    
+    return self;
+}
+
+-(void)addNewItem:(Item*)item{
+    [self.itemArray addObject:item];
+}
+
+-(NSMutableArray*)getItemList{
+    return self.itemArray;
+}
+
 @end

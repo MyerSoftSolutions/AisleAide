@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class AisleList;
+#import "AisleList.h"
 
 @interface Store : NSObject
 

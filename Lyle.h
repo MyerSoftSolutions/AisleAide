@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Item.h"
+#import "ItemList.h"
+#import "Patron.h"
+#import "Store.h"
 
-
-@class ItemList, Patron, Store;
-
+@class ItemList;
 @interface Lyle : NSObject
 
 @property (nonatomic, strong) ItemList *currentItemList;
@@ -18,5 +20,8 @@
 @property (nonatomic, strong) Store *currentStore;
 
 +(id)defaultHelper;
+
+-(void)addSelectedItem:(Item*) selectedItem;
+-(void)removeLastItem;
 
 @end

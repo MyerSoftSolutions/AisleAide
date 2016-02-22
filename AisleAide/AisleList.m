@@ -39,62 +39,76 @@
     
 }
 
--(Item*)outputItem:(int)aisleNum{
-    Aisle *aisle = [self.aisleArray objectAtIndex:aisleNum - 1];
-    ProductGroup *pGroup = [aisle.productGroups objectAtIndex:0];
-    Item *item = [pGroup.items objectAtIndex:0];
+//-(Item*)outputItem:(int)aisleNum{
+//    Aisle *aisle = [self.aisleArray objectAtIndex:aisleNum - 1];
+//    ProductGroup *pGroup = [aisle.productGroups objectAtIndex:0];
+//    Item *item = [pGroup.items objectAtIndex:0];
+//    
+//    return item;
+//}
+
+-(BOOL)isItemInArray:(NSMutableArray*)itemArray item:(Item*)suggestedItem{
+    BOOL isInArray = NO;
     
-    return item;
+    for (Item *item in itemArray) {
+        if (item == suggestedItem) {
+            isInArray = YES;
+        }
+    }
+    return isInArray;
 }
 
--(NSMutableArray*)alsoOnThisAisle:(Aisle*)aisle item:(Item*)item{
+-(NSMutableArray*)alsoOnThisAisle:(Aisle*)aisle item:(Item*)item userItemArray:(NSMutableArray*)itemArray{
     NSMutableArray *items = [[NSMutableArray alloc] initWithCapacity:3];
-    int k = 0;
     
-    for (int i = 0; i < aisle.productGroups.count && k < 3; i++) {
-        ProductGroup *pGroup = aisle.productGroups[i];
+    for (int k = 0; k < 3; k++) {
+        int randomNum = arc4random_uniform((uint32_t)aisle.productGroups.count);
+        ProductGroup *pGroup = aisle.productGroups[randomNum];
         
-        int randomNum = arc4random_uniform((uint32_t)pGroup.items.count);
-        Item *suggestedItem = pGroup.items[randomNum];
+        int randomNum2 = arc4random_uniform((uint32_t)pGroup.items.count);
+        Item *suggestedItem = pGroup.items[randomNum2];
         
-        if (suggestedItem == item) {
+        if (suggestedItem == item || [self isItemInArray:items item:suggestedItem] || [self isItemInArray:itemArray item:suggestedItem]) {
+            k--;
             continue;
         }else{
             [items addObject:suggestedItem];
-            k++;
         }
     }
     
     return items;
 }
 
--(NSMutableArray*)oneAisleOver:(Aisle*)aisle{
-    NSMutableArray *items= [[NSMutableArray alloc] initWithCapacity:3];
-    NSMutableArray *singleSuggesteditems= [[NSMutableArray alloc] initWithCapacity:3];
-    NSMutableArray *doubleSuggestedItems= [[NSMutableArray alloc] initWithCapacity:4];
-
+-(NSMutableArray*)oneAisleOver:(Aisle*)aisle userItemArray:(NSMutableArray*)itemArray{
+    NSMutableArray *items= [[NSMutableArray alloc] init];
+    NSMutableArray *singleSuggestedItems= [[NSMutableArray alloc] init];
+    NSMutableArray *doubleSuggestedItems= [[NSMutableArray alloc] init];
     
-    int homeAisle = [aisle.aisleNumber intValue];
+    int homeAisle = [aisle.aisleNumber intValue] - 1;
     int leftAisle = homeAisle - 1;
     int rightAisle = homeAisle + 1;
     
     int count = 1;
     
-    if ((homeAisle - 1) == 0) {
+    if ((homeAisle) == 0) {
         Aisle *aisleRight = [self.aisleArray objectAtIndex:rightAisle];
         items = [aisleRight getAllItems];
         
         while (count < 4) {
             
             int k = arc4random_uniform((uint32_t)[items count]);
-            NSLog(@"Random%d IS...%d", count, k);
+            Item *suggestedItem = items[k];
 
-            [singleSuggesteditems addObject:items[k]];
-            ++count;
+            if ( [self isItemInArray:itemArray item:suggestedItem]) {
+                continue;
+            } else {
+                [singleSuggestedItems addObject:suggestedItem];
+                ++count;
+            }
         }
-        return singleSuggesteditems;
+        return singleSuggestedItems;
         
-    }else if(homeAisle == self.aisleArray.count){
+    }else if( (homeAisle + 1) == self.aisleArray.count){
         
         Aisle *aisleLeft = [self.aisleArray objectAtIndex:leftAisle];
         items = [aisleLeft getAllItems];
@@ -102,12 +116,16 @@
         while (count < 4) {
             
             int k = arc4random_uniform((uint32_t)[items count]);
-            NSLog(@"Random%d IS...%d", count, k);
+            Item *suggestedItem = items[k];
             
-            [singleSuggesteditems addObject:items[k]];
-            ++count;
+            if ( [self isItemInArray:itemArray item:suggestedItem]) {
+                continue;
+            } else {
+                [singleSuggestedItems addObject:suggestedItem];
+                ++count;
+            }
         }
-        return singleSuggesteditems;
+        return singleSuggestedItems;
     
     }else{
         Aisle *aisleLeft = [self.aisleArray objectAtIndex:leftAisle];
@@ -116,26 +134,25 @@
         while (count < 3) {
             
             int k = arc4random_uniform((uint32_t)[items count]);
-            NSLog(@"Random%d IS...%d", count, k);
+            Item *suggestedItem = items[k];
             
-            [doubleSuggestedItems addObject:items[k]];
-            ++count;
+            if ( [self isItemInArray:itemArray item:suggestedItem] ) {
+                continue;
+            } else {
+                [doubleSuggestedItems addObject:suggestedItem];
+                ++count;
+            }
         }
         
-        count = 1;
         Aisle *aisleRight = [self.aisleArray objectAtIndex:rightAisle];
         items = [aisleRight getAllItems];
-        
-        while (count < 3) {
-            
-            int k = arc4random_uniform((uint32_t)[items count]);
-            NSLog(@"Random%d IS...%d", count, k);
-            
-            [doubleSuggestedItems addObject:items[k]];
-            ++count;
-        }
-        return doubleSuggestedItems;
 
+        int k = arc4random_uniform((uint32_t)[items count]);
+        
+        [doubleSuggestedItems addObject:items[k]];
+        ++count;
+     
+        return doubleSuggestedItems;
     }
 }
 

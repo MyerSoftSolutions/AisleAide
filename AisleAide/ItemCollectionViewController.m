@@ -20,11 +20,14 @@
 
 @end
 
+Item *selectedItem;
+BOOL itemAlreadyExists;
 @implementation ItemCollectionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
    
+    itemAlreadyExists = NO;
 //    self.itemArray = [[NSMutableArray alloc] init];
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
@@ -63,14 +66,36 @@
 
 -(void)collectionView:(nonnull UICollectionView *)collectionView didSelectItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
 
+    selectedItem = (Item*) [self.itemArray objectAtIndex:indexPath.row];
     
+    if ( [self isItemInArray:self.lyle.currentItemList.itemArray item:selectedItem]) {
+        itemAlreadyExists = YES;
+        [self shouldPerformSegueWithIdentifier:@"AddMoreItemsSegue" sender:self];
+    } else{
+        [self.lyle addSelectedItem:selectedItem];
+        AddMoreItemsViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"AddMoreItemsViewController"];
+        vc.addItemsDelegate = self;
+        vc.lyle = self.lyle;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
+-(BOOL)isItemInArray:(NSMutableArray*)itemArray item:(Item*)suggestedItem{
+    BOOL isInArray = NO;
     
+    for (Item *item in itemArray) {
+        if (item == suggestedItem) {
+            isInArray = YES;
+        }
+    }
+    return isInArray;
 }
 #pragma mark - AddMoreItemsDelegate Method
 
 -(void)selectionMade:(int)choice{
     
     switch (choice) {
+            //Have lyle add the selectedItem to the currentItemList
         case 0:
             [self performSegueWithIdentifier:@"ShowListSegue" sender:self];
             break;
@@ -83,6 +108,20 @@
 }
 
 #pragma mark - Navigation
+
+-(BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender{
+
+    if ([identifier isEqualToString:@"AddMoreItemsSegue"] && itemAlreadyExists) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Duplicate Item" message:@"This item is already in  your ItemList" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        alert.alertViewStyle = UIAlertViewStyleDefault;
+        
+        [alert show];
+    
+        return NO;
+    }else{
+        return YES;
+    }
+}
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

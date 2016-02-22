@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class Aisle, ProductGroup;
+#import "Aisle.h"
+#import "ProductGroup.h"
 
 @interface Item : NSObject
 

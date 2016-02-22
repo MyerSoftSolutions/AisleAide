@@ -16,7 +16,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self createCustomBackButton:@"-Swap Item"];
     // Do any additional setup after loading the view.
+}
+
+-(void)navigationBackButtonClicked:(UIBarButtonItem *)sender{
+    [self.lyle removeLastItem];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

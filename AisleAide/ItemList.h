@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import "Patron.h"
+#import "Patron.h"
+#import "Item.h"
 
-@class Patron;
 @interface ItemList : NSObject
 
 @property (nonatomic, strong) NSMutableArray *itemArray;
 @property (nonatomic, weak) Patron *patron;
+
+-(void)addNewItem:(Item*)item;
+-(NSMutableArray*)getItemList;
 
 @end

@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Lyle.h"
 
-@class Lyle;
 @interface AisleAideSetupViewController : UIViewController
 
 @property (nonatomic, strong) Lyle *lyle;
+@property (strong, nonatomic) UIBarButtonItem *backBtn;
+
+-(void)navigationBackButtonClicked:(UIBarButtonItem *)sender;
+-(void)createCustomBackButton:(NSString*)btnTitle;
 @end

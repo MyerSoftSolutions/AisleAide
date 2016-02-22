@@ -29,6 +29,10 @@
 		404D964A1B703F0A00447F5C /* AANavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 404D96471B703F0A00447F5C /* AANavigationController.m */; };
 		404D964B1B703F0A00447F5C /* AANavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404D96481B703F0A00447F5C /* AANavigationController.xib */; };
 		404D964C1B703F0A00447F5C /* AANavigationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 404D96481B703F0A00447F5C /* AANavigationController.xib */; };
+		40A089011C542F7400390AB2 /* AlsoOnItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A089001C542F7400390AB2 /* AlsoOnItemTableViewCell.m */; };
+		40A089021C542F7400390AB2 /* AlsoOnItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A089001C542F7400390AB2 /* AlsoOnItemTableViewCell.m */; };
+		40A089051C54305A00390AB2 /* AisleOverItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A089041C54305A00390AB2 /* AisleOverItemTableViewCell.m */; };
+		40A089061C54305A00390AB2 /* AisleOverItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A089041C54305A00390AB2 /* AisleOverItemTableViewCell.m */; };
 		40A6B1AE1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */; };
 		40A6B1AF1B17E9660059BB24 /* ProdGrpCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */; };
 		40A6B1B21B17EA090059BB24 /* ProdGrpCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A6B1B11B17EA090059BB24 /* ProdGrpCollectionViewController.m */; };
@@ -39,10 +43,10 @@
 		40D86F331AFFD5EE00D686C8 /* ItemListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F311AFFD5EE00D686C8 /* ItemListViewController.m */; };
 		40D86F361AFFE45000D686C8 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */; };
 		40D86F371AFFE45000D686C8 /* ItemTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */; };
-		40E94BA71BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; settings = {ASSET_TAGS = (); }; };
-		40E94BA81BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; settings = {ASSET_TAGS = (); }; };
-		40E94BAB1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; settings = {ASSET_TAGS = (); }; };
-		40E94BAC1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; settings = {ASSET_TAGS = (); }; };
+		40E94BA71BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; };
+		40E94BA81BB708C9003E6920 /* Lyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BA61BB708C9003E6920 /* Lyle.m */; };
+		40E94BAB1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; };
+		40E94BAC1BB70FD9003E6920 /* ItemList.m in Sources */ = {isa = PBXBuildFile; fileRef = 40E94BAA1BB70FD9003E6920 /* ItemList.m */; };
 		40F198351AC314E100950FDE /* ProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198341AC314E100950FDE /* ProductGroup.m */; };
 		40F198361AC314E100950FDE /* ProductGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198341AC314E100950FDE /* ProductGroup.m */; };
 		40F198391AC319D900950FDE /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 40F198381AC319D900950FDE /* Store.m */; };
@@ -95,6 +99,10 @@
 		404D96461B703F0A00447F5C /* AANavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AANavigationController.h; sourceTree = "<group>"; };
 		404D96471B703F0A00447F5C /* AANavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AANavigationController.m; sourceTree = "<group>"; };
 		404D96481B703F0A00447F5C /* AANavigationController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AANavigationController.xib; sourceTree = "<group>"; };
+		40A088FF1C542F7400390AB2 /* AlsoOnItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlsoOnItemTableViewCell.h; sourceTree = "<group>"; };
+		40A089001C542F7400390AB2 /* AlsoOnItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlsoOnItemTableViewCell.m; sourceTree = "<group>"; };
+		40A089031C54305A00390AB2 /* AisleOverItemTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AisleOverItemTableViewCell.h; sourceTree = "<group>"; };
+		40A089041C54305A00390AB2 /* AisleOverItemTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AisleOverItemTableViewCell.m; sourceTree = "<group>"; };
 		40A6B1AC1B17E9660059BB24 /* ProdGrpCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdGrpCollectionViewCell.h; sourceTree = "<group>"; };
 		40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdGrpCollectionViewCell.m; sourceTree = "<group>"; };
 		40A6B1B01B17EA090059BB24 /* ProdGrpCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdGrpCollectionViewController.h; sourceTree = "<group>"; };
@@ -195,21 +203,25 @@
 				40A6B1B51B17F9010059BB24 /* AisleAideContainerViewController.m */,
 				40A6B1B01B17EA090059BB24 /* ProdGrpCollectionViewController.h */,
 				40A6B1B11B17EA090059BB24 /* ProdGrpCollectionViewController.m */,
+				40A6B1AC1B17E9660059BB24 /* ProdGrpCollectionViewCell.h */,
+				40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */,
 				404D963E1B6F01EE00447F5C /* ItemCollectionViewController.h */,
 				404D963F1B6F01EE00447F5C /* ItemCollectionViewController.m */,
+				404D96421B6F05BC00447F5C /* ItemCollectionViewCell.h */,
+				404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */,
 				404D96461B703F0A00447F5C /* AANavigationController.h */,
 				404D96471B703F0A00447F5C /* AANavigationController.m */,
 				404D96481B703F0A00447F5C /* AANavigationController.xib */,
-				404D96421B6F05BC00447F5C /* ItemCollectionViewCell.h */,
-				404D96431B6F05BC00447F5C /* ItemCollectionViewCell.m */,
-				40A6B1AC1B17E9660059BB24 /* ProdGrpCollectionViewCell.h */,
-				40A6B1AD1B17E9660059BB24 /* ProdGrpCollectionViewCell.m */,
 				40D86F301AFFD5EE00D686C8 /* ItemListViewController.h */,
 				40D86F311AFFD5EE00D686C8 /* ItemListViewController.m */,
-				40E94BA91BB70FD9003E6920 /* ItemList.h */,
-				40E94BAA1BB70FD9003E6920 /* ItemList.m */,
 				40D86F341AFFE45000D686C8 /* ItemTableViewCell.h */,
 				40D86F351AFFE45000D686C8 /* ItemTableViewCell.m */,
+				40A089031C54305A00390AB2 /* AisleOverItemTableViewCell.h */,
+				40A089041C54305A00390AB2 /* AisleOverItemTableViewCell.m */,
+				40A088FF1C542F7400390AB2 /* AlsoOnItemTableViewCell.h */,
+				40A089001C542F7400390AB2 /* AlsoOnItemTableViewCell.m */,
+				40E94BA91BB70FD9003E6920 /* ItemList.h */,
+				40E94BAA1BB70FD9003E6920 /* ItemList.m */,
 				4017124C1AEEC36A000EC343 /* AisleAide System Objects */,
 				40F198431AC328CE00950FDE /* StoreModel.plist */,
 				403AF30E1AA7A8D600F8848E /* Images.xcassets */,
@@ -290,7 +302,7 @@
 		403AF2F31AA7A8D600F8848E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MyerSoft;
 				TargetAttributes = {
 					403AF2FA1AA7A8D600F8848E = {
@@ -352,6 +364,8 @@
 			files = (
 				40E94BAB1BB70FD9003E6920 /* ItemList.m in Sources */,
 				40D86F361AFFE45000D686C8 /* ItemTableViewCell.m in Sources */,
+				40A089011C542F7400390AB2 /* AlsoOnItemTableViewCell.m in Sources */,
+				40A089051C54305A00390AB2 /* AisleOverItemTableViewCell.m in Sources */,
 				40F24CDA1ABCF0C400B9945F /* Aisle.m in Sources */,
 				403AF3291AA7AB2200F8848E /* Item.m in Sources */,
 				404D96491B703F0A00447F5C /* AANavigationController.m in Sources */,
@@ -385,6 +399,7 @@
 				40F24CDB1ABCF0C400B9945F /* Aisle.m in Sources */,
 				403AF32A1AA7AB2200F8848E /* Item.m in Sources */,
 				40F198361AC314E100950FDE /* ProductGroup.m in Sources */,
+				40A089061C54305A00390AB2 /* AisleOverItemTableViewCell.m in Sources */,
 				404D96411B6F01EE00447F5C /* ItemCollectionViewController.m in Sources */,
 				40E94BA81BB708C9003E6920 /* Lyle.m in Sources */,
 				40F1983A1AC319D900950FDE /* Store.m in Sources */,
@@ -397,6 +412,7 @@
 				404D96451B6F05BC00447F5C /* ItemCollectionViewCell.m in Sources */,
 				404D964A1B703F0A00447F5C /* AANavigationController.m in Sources */,
 				40F24CDF1ABCF5B900B9945F /* Patron.m in Sources */,
+				40A089021C542F7400390AB2 /* AlsoOnItemTableViewCell.m in Sources */,
 				40F1983E1AC31C3400950FDE /* AisleList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +467,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -513,6 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AisleAide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyerSoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -523,6 +541,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AisleAide/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyerSoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -541,6 +560,7 @@
 				);
 				INFOPLIST_FILE = AisleAideTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyerSoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AisleAide.app/AisleAide";
 			};
@@ -556,6 +576,7 @@
 				);
 				INFOPLIST_FILE = AisleAideTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MyerSoft.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AisleAide.app/AisleAide";
 			};

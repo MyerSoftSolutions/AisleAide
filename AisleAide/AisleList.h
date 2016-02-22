@@ -9,15 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "Aisle.h"
 #import "Item.h"
+#import "ItemList.h"
 
 @interface AisleList : NSObject
 
 @property (strong, nonatomic) NSMutableArray *aisleArray;
 
--(NSMutableArray*)alsoOnThisAisle:(Aisle*)aisle item:(Item*)item;
+-(NSMutableArray*)alsoOnThisAisle:(Aisle*)aisle item:(Item*)item userItemArray:(NSMutableArray*)itemArray;
 
--(NSMutableArray*)oneAisleOver:(Aisle*)aisle;
+-(NSMutableArray*)oneAisleOver:(Aisle*)aisle userItemArray:(NSMutableArray*)itemArray;
 
 -(NSMutableArray*)getAllProdGrps;
--(Item*)outputItem:(int)aisleNum;
+//-(Item*)outputItem:(int)aisleNum;
 @end

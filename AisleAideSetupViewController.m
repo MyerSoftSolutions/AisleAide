@@ -20,6 +20,15 @@
 
 }
 
+-(void)createCustomBackButton:(NSString*)btnTitle{
+    self.backBtn = [[UIBarButtonItem alloc] initWithTitle:btnTitle style:UIBarButtonItemStylePlain target:self action:@selector(navigationBackButtonClicked:)];
+    self.navigationItem.leftBarButtonItem = self.backBtn;
+}
+
+-(void)navigationBackButtonClicked:(UIBarButtonItem *)sender{
+
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

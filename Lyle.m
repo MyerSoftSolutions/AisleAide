@@ -30,4 +30,19 @@
 
 }
 
+
+-(void)addSelectedItem:(Item*) selectedItem{
+
+    //Initial ItemList creation
+    if (self.currentItemList == nil) {
+        self.currentItemList = [[ItemList alloc] init];
+        [self.currentItemList addNewItem:selectedItem];
+    }else{
+        [self.currentItemList addNewItem:selectedItem];
+    }
+}
+
+-(void)removeLastItem{
+    [self.currentItemList.itemArray removeObjectAtIndex:self.currentItemList.itemArray.count - 1];
+}
 @end
